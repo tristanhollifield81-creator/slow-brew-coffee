@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Slow Brew Coffee | Chill Coffee Shop</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER / NAVIGATION
+  ========================== -->
+  <header class="header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">☕</span>
+        Slow Brew
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="locations.html" class="nav-link">Locations</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="menu.html" class="nav-button">
+        Order Coffee
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+
+        <p class="hero-eyebrow">
+          Coffee • Comfort • Community
+        </p>
+
+        <h1>
+          Slow mornings.<br />
+          <span>Great coffee.</span>
+        </h1>
+
+        <p class="hero-description">
+          A neighborhood coffee house made for quiet mornings,
+          long conversations, and the perfect cup.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="menu.html" class="btn btn-primary">
+            Explore Our Menu
+          </a>
+
+          <a href="locations.html" class="btn btn-secondary">
+            Find a Café
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll to unwind</span>
+        <div class="scroll-line"></div>
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+    <section class="intro section">
+      <div class="container intro-grid">
+
+        <div class="section-heading">
+          <p class="section-tag">Take It Slow</p>
+
+          <h2>
+            More than coffee.<br />
+            It’s your daily reset.
+          </h2>
+        </div>
+
+        <div class="intro-copy">
+          <p>
+            Slow Brew is built around the simple things: carefully
+            roasted coffee, comfortable spaces, warm food, and people
+            you actually want to spend time with.
+          </p>
+
+          <p>
+            Whether you're starting the day, catching up with a friend,
+            or opening your laptop for a few hours, there’s always a
+            seat waiting for you.
+          </p>
+
+          <a href="about.html" class="text-link">
+            Our Story <span>→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         FEATURED DRINKS
+    ========================== -->
+    <section class="featured section">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div>
+            <p class="section-tag">Coffee Favorites</p>
+            <h2>Made for your mood.</h2>
+          </div>
+
+          <a href="menu.html" class="text-link">
+            View Full Menu <span>→</span>
+          </a>
+
+        </div>
+
+
+        <div class="drink-grid">
+
+          <article class="drink-card">
+
+            <div class="drink-image">
+              <img
+                src="assets/images/drinks/latte.jpg"
+                alt="Caramel cloud latte"
+              />
+
+              <span class="drink-label">
+                Slow Morning
+              </span>
+            </div>
+
+            <div class="drink-content">
+
+              <div class="drink-title-row">
+                <h3>Caramel Cloud Latte</h3>
+                <span>$5.50</span>
+              </div>
+
+              <p>
+                Espresso, steamed oat milk, vanilla, and a soft caramel finish.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="drink-card">
+
+            <div class="drink-image">
+              <img
+                src="assets/images/drinks/cold-brew.jpg"
+                alt="Vanilla cream cold brew"
+              />
+
+              <span class="drink-label">
+                Need Energy
+              </span>
+            </div>
+
+            <div class="drink-content">
+
+              <div class="drink-title-row">
+                <h3>Vanilla Cream Cold Brew</h3>
+                <span>$5.25</span>
+              </div>
+
+              <p>
+                Smooth cold brew topped with house vanilla sweet cream.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="drink-card">
+
+            <div class="drink-image">
+              <img
+                src="assets/images/drinks/mocha.jpg"
+                alt="Dark chocolate mocha"
+              />
+
+              <span class="drink-label">
+                Rainy Day Pick
+              </span>
+            </div>
+
+            <div class="drink-content">
+
+              <div class="drink-title-row">
+                <h3>Dark Chocolate Mocha</h3>
+                <span>$5.75</span>
+              </div>
+
+              <p>
+                Rich chocolate, espresso, steamed milk, and cocoa dust.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPERIENCE SECTION
+    ========================== -->
+    <section class="experience section">
+
+      <div class="container experience-grid">
+
+        <div class="experience-image">
+          <img
+            src="assets/images/shop/interior.jpg"
+            alt="Relaxing coffee shop interior"
+          />
+        </div>
+
+        <div class="experience-content">
+
+          <p class="section-tag">Stay Awhile</p>
+
+          <h2>
+            Your favorite corner of the neighborhood.
+          </h2>
+
+          <p>
+            Soft music, warm lighting, comfortable seating, and the
+            smell of fresh coffee. We designed every Slow Brew café to
+            feel less like a stop and more like a place to stay.
+          </p>
+
+          <div class="experience-features">
+
+            <div class="experience-feature">
+              <span>01</span>
+              <div>
+                <h3>Freshly Roasted</h3>
+                <p>Small-batch beans roasted for balance and flavor.</p>
+              </div>
+            </div>
+
+            <div class="experience-feature">
+              <span>02</span>
+              <div>
+                <h3>Comfort First</h3>
+                <p>Plenty of seating, outlets, Wi-Fi, and room to breathe.</p>
+              </div>
+            </div>
+
+            <div class="experience-feature">
+              <span>03</span>
+              <div>
+                <h3>Made Local</h3>
+                <p>Pastries and ingredients sourced from local partners.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TODAY'S MOOD
+    ========================== -->
+    <section class="mood section">
+
+      <div class="container mood-card">
+
+        <div class="mood-content">
+
+          <p class="section-tag">
+            Today’s Mood
+          </p>
+
+          <h2>
+            Feeling cozy?
+          </h2>
+
+          <p>
+            Try our Cinnamon Honey Latte — espresso with steamed milk,
+            local honey, cinnamon, and just enough sweetness.
+          </p>
+
+          <a href="menu.html" class="btn btn-primary">
+            See Today’s Pick
+          </a>
+
+        </div>
+
+        <div class="mood-quote">
+          <span>“</span>
+          <p>
+            Some days just need coffee and nowhere to rush to.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         HOURS / LOCATION
+    ========================== -->
+    <section class="visit section">
+
+      <div class="container visit-grid">
+
+        <div class="visit-content">
+
+          <p class="section-tag">
+            Come Say Hi
+          </p>
+
+          <h2>
+            Coffee tastes better when you stay awhile.
+          </h2>
+
+          <p>
+            Drop in for your morning ritual, afternoon break,
+            or an evening catch-up.
+          </p>
+
+          <a href="locations.html" class="btn btn-secondary-dark">
+            View Locations
+          </a>
+
+        </div>
+
+
+        <div class="hours-card">
+
+          <h3>Opening Hours</h3>
+
+          <div class="hours-row">
+            <span>Monday – Friday</span>
+            <strong>6:30 AM – 8:00 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Saturday</span>
+            <strong>7:00 AM – 9:00 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Sunday</span>
+            <strong>7:00 AM – 7:00 PM</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         NEWSLETTER
+    ========================== -->
+    <section class="newsletter">
+
+      <div class="container newsletter-content">
+
+        <div>
+          <p class="section-tag">Stay In The Loop</p>
+
+          <h2>
+            Coffee news, minus the spam.
+          </h2>
+
+          <p>
+            New drinks, café events, and the occasional reason
+            to leave the house.
+          </p>
+        </div>
+
+
+        <form class="newsletter-form" id="newsletter-form">
+
+          <input
+            type="email"
+            id="newsletter-email"
+            placeholder="Your email address"
+            required
+          />
+
+          <button type="submit" class="btn btn-primary">
+            Join the List
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="logo">
+          <span class="logo-icon">☕</span>
+          Slow Brew
+        </a>
+
+        <p>
+          Good coffee. Good people.<br />
+          No rush.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <div>
+          <h4>Explore</h4>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">Our Story</a>
+          <a href="locations.html">Locations</a>
+        </div>
+
+        <div>
+          <h4>Visit</h4>
+          <a href="contact.html">Contact</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+      <p>
+        © <span id="year"></span> Slow Brew Coffee. All rights reserved.
+      </p>
+
+      <p>
+        Made with ☕ and good vibes.
+      </p>
+    </div>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

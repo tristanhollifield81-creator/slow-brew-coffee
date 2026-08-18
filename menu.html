@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Menu | Slow Brew Coffee</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header menu-page-header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">☕</span>
+        Slow Brew
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="locations.html" class="nav-link">Locations</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="#menu" class="nav-button">
+        Order Coffee
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- MENU HERO -->
+    <section class="page-hero menu-hero">
+
+      <div class="page-hero-overlay"></div>
+
+      <div class="container page-hero-content">
+
+        <p class="hero-eyebrow">
+          Brewed Slow • Served Fresh
+        </p>
+
+        <h1>
+          Find your<br />
+          <span>favorite cup.</span>
+        </h1>
+
+        <p>
+          Espresso classics, slow coffee, cold drinks, teas,
+          and something warm to eat.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- MENU INTRO -->
+    <section class="menu-intro section">
+
+      <div class="container menu-intro-content">
+
+        <p class="section-tag">The Menu</p>
+
+        <h2>
+          Whatever kind of day you're having,
+          we've got something for it.
+        </h2>
+
+        <p>
+          Our drinks are made to order using thoughtfully sourced
+          coffee, simple ingredients, and zero unnecessary fuss.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu-section section" id="menu">
+
+      <div class="container">
+
+        <!-- COFFEE -->
+        <div class="menu-category">
+
+          <div class="menu-category-heading">
+            <p class="section-tag">Warm & Familiar</p>
+            <h2>Coffee</h2>
+          </div>
+
+          <div class="menu-items">
+
+            <article class="menu-item">
+              <div>
+                <h3>Espresso</h3>
+                <p>Rich, balanced double shot.</p>
+              </div>
+              <span>$3.25</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Americano</h3>
+                <p>Espresso softened with hot water.</p>
+              </div>
+              <span>$3.75</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Cappuccino</h3>
+                <p>Espresso, steamed milk, and airy foam.</p>
+              </div>
+              <span>$4.75</span>
+            </article>
+
+            <article class="menu-item featured-menu-item">
+              <div>
+                <span class="menu-badge">House Favorite</span>
+                <h3>Caramel Cloud Latte</h3>
+                <p>
+                  Espresso, oat milk, vanilla, and soft caramel.
+                </p>
+              </div>
+              <span>$5.50</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Cinnamon Honey Latte</h3>
+                <p>
+                  Espresso, steamed milk, honey, and cinnamon.
+                </p>
+              </div>
+              <span>$5.50</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Dark Chocolate Mocha</h3>
+                <p>
+                  Espresso, chocolate, milk, and cocoa dust.
+                </p>
+              </div>
+              <span>$5.75</span>
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- COLD DRINKS -->
+        <div class="menu-category">
+
+          <div class="menu-category-heading">
+            <p class="section-tag">Keep It Cool</p>
+            <h2>Cold Coffee</h2>
+          </div>
+
+          <div class="menu-items">
+
+            <article class="menu-item">
+              <div>
+                <h3>Classic Cold Brew</h3>
+                <p>
+                  Smooth, slow-steeped coffee served over ice.
+                </p>
+              </div>
+              <span>$4.75</span>
+            </article>
+
+            <article class="menu-item featured-menu-item">
+              <div>
+                <span class="menu-badge">Need Energy</span>
+                <h3>Vanilla Cream Cold Brew</h3>
+                <p>
+                  Cold brew topped with house vanilla sweet cream.
+                </p>
+              </div>
+              <span>$5.25</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Iced Latte</h3>
+                <p>
+                  Espresso, milk, and ice. Simple and smooth.
+                </p>
+              </div>
+              <span>$4.95</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Brown Sugar Shaken Espresso</h3>
+                <p>
+                  Espresso shaken with brown sugar and oat milk.
+                </p>
+              </div>
+              <span>$5.75</span>
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- TEA -->
+        <div class="menu-category">
+
+          <div class="menu-category-heading">
+            <p class="section-tag">Not Feeling Coffee?</p>
+            <h2>Tea & More</h2>
+          </div>
+
+          <div class="menu-items">
+
+            <article class="menu-item">
+              <div>
+                <h3>Matcha Latte</h3>
+                <p>
+                  Ceremonial matcha with your choice of milk.
+                </p>
+              </div>
+              <span>$5.25</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Chai Latte</h3>
+                <p>
+                  Black tea with cinnamon, cardamom, and warm spice.
+                </p>
+              </div>
+              <span>$4.95</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>London Fog</h3>
+                <p>
+                  Earl Grey, vanilla, and steamed milk.
+                </p>
+              </div>
+              <span>$4.75</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Hot Chocolate</h3>
+                <p>
+                  Dark chocolate and steamed milk.
+                </p>
+              </div>
+              <span>$4.50</span>
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- FOOD -->
+        <div class="menu-category">
+
+          <div class="menu-category-heading">
+            <p class="section-tag">Grab a Bite</p>
+            <h2>Food</h2>
+          </div>
+
+          <div class="menu-items">
+
+            <article class="menu-item">
+              <div>
+                <h3>Butter Croissant</h3>
+                <p>
+                  Flaky, buttery, and baked fresh.
+                </p>
+              </div>
+              <span>$3.95</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Avocado Toast</h3>
+                <p>
+                  Sourdough, avocado, chili flakes, and sea salt.
+                </p>
+              </div>
+              <span>$8.50</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Breakfast Sandwich</h3>
+                <p>
+                  Egg, cheddar, and your choice of bacon or avocado.
+                </p>
+              </div>
+              <span>$7.95</span>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Blueberry Muffin</h3>
+                <p>
+                  Soft-baked muffin with fresh blueberries.
+                </p>
+              </div>
+              <span>$4.25</span>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CUSTOMIZATION -->
+    <section class="customize-section section">
+
+      <div class="container customize-card">
+
+        <div>
+          <p class="section-tag">Make It Yours</p>
+
+          <h2>
+            Your coffee. Your rules.
+          </h2>
+
+          <p>
+            Swap the milk, add a flavor, make it iced, add another
+            espresso shot, or keep it simple.
+          </p>
+        </div>
+
+        <div class="customize-options">
+
+          <div>
+            <span>01</span>
+            <h3>Milk Options</h3>
+            <p>Whole, oat, almond, and coconut.</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>Flavor</h3>
+            <p>Vanilla, caramel, mocha, or seasonal syrup.</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>Extra Shot</h3>
+            <p>Because some mornings need backup.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="menu-cta">
+
+      <div class="container menu-cta-content">
+
+        <p class="section-tag">
+          Still Deciding?
+        </p>
+
+        <h2>
+          Ask your barista what matches your mood.
+        </h2>
+
+        <a href="locations.html" class="btn btn-primary">
+          Find a Slow Brew
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="logo">
+          <span class="logo-icon">☕</span>
+          Slow Brew
+        </a>
+
+        <p>
+          Good coffee. Good people.<br />
+          No rush.
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <div>
+          <h4>Explore</h4>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">Our Story</a>
+          <a href="locations.html">Locations</a>
+        </div>
+
+        <div>
+          <h4>Visit</h4>
+          <a href="contact.html">Contact</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        © <span id="year"></span> Slow Brew Coffee. All rights reserved.
+      </p>
+
+      <p>
+        Made with ☕ and good vibes.
+      </p>
+    </div>
+
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
