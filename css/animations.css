@@ -1,0 +1,349 @@
+/* =========================================
+   SLOW BREW COFFEE - ANIMATIONS
+========================================= */
+
+/* -----------------------------------------
+   PAGE LOAD
+----------------------------------------- */
+
+body {
+  animation: pageFadeIn 0.8s ease forwards;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* -----------------------------------------
+   HERO ANIMATIONS
+----------------------------------------- */
+
+.hero-eyebrow {
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.2s forwards;
+}
+
+.hero h1 {
+  opacity: 0;
+  animation: fadeUp 1s ease 0.35s forwards;
+}
+
+.hero-description {
+  opacity: 0;
+  animation: fadeUp 0.9s ease 0.55s forwards;
+}
+
+.hero-buttons {
+  opacity: 0;
+  animation: fadeUp 0.9s ease 0.7s forwards;
+}
+
+.hero-scroll {
+  opacity: 0;
+  animation: fadeIn 1s ease 1s forwards;
+}
+
+
+/* -----------------------------------------
+   GENERAL ANIMATIONS
+----------------------------------------- */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* -----------------------------------------
+   HERO BACKGROUND MOVEMENT
+----------------------------------------- */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    url("../assets/images/hero/hero-coffee.jpg")
+    center / cover no-repeat;
+
+  transform: scale(1.03);
+
+  animation: heroDrift 18s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes heroDrift {
+  from {
+    transform: scale(1.03);
+  }
+
+  to {
+    transform: scale(1.09);
+  }
+}
+
+
+/* -----------------------------------------
+   HERO SCROLL LINE
+----------------------------------------- */
+
+.scroll-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+
+  width: 100%;
+  height: 100%;
+
+  background: white;
+
+  animation: scrollLine 2.4s ease-in-out infinite;
+}
+
+@keyframes scrollLine {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+
+/* -----------------------------------------
+   BUTTON HOVER
+----------------------------------------- */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  transform: skewX(-20deg);
+
+  transition: left 0.55s ease;
+}
+
+.btn:hover::before {
+  left: 120%;
+}
+
+
+/* -----------------------------------------
+   DRINK CARD IMAGE EFFECT
+----------------------------------------- */
+
+.drink-image {
+  position: relative;
+}
+
+.drink-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(20, 20, 18, 0.18),
+      transparent 45%
+    );
+
+  pointer-events: none;
+}
+
+
+/* -----------------------------------------
+   DRINK LABEL
+----------------------------------------- */
+
+.drink-label {
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.drink-card:hover .drink-label {
+  transform: translateY(-3px);
+  background: #ffffff;
+}
+
+
+/* -----------------------------------------
+   FEATURE NUMBERS
+----------------------------------------- */
+
+.experience-feature > span {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.experience-feature:hover > span {
+  transform: translateX(5px);
+}
+
+
+/* -----------------------------------------
+   MOOD QUOTE
+----------------------------------------- */
+
+.mood-quote span {
+  animation: quoteFloat 4s ease-in-out infinite;
+}
+
+@keyframes quoteFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+
+/* -----------------------------------------
+   NAVIGATION
+----------------------------------------- */
+
+.nav-link {
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+}
+
+
+/* -----------------------------------------
+   LOGO
+----------------------------------------- */
+
+.logo-icon {
+  display: inline-block;
+
+  transition:
+    transform 0.4s ease;
+}
+
+.logo:hover .logo-icon {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+
+/* -----------------------------------------
+   INPUT
+----------------------------------------- */
+
+.newsletter-form input {
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.newsletter-form input:focus {
+  background: white;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(95, 111, 82, 0.12);
+}
+
+
+/* -----------------------------------------
+   FOOTER LINKS
+----------------------------------------- */
+
+.footer-links a {
+  position: relative;
+  width: fit-content;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: -3px;
+
+  width: 0;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+
+/* -----------------------------------------
+   REDUCED MOTION
+----------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
